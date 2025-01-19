@@ -1,74 +1,74 @@
-
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    padding: 20px;
-    background-color: #f7f7f7;
-    padding: 20px;
-    font-family: "Montserrat", sans-serif;
-}
-img{
-    padding: 10px;
-}
-.calculator-body{
-    margin-inline: auto;
-    margin-top: 50px;  
-    /* width: clamp(40%,75rem,50%); */
-    max-width: 600px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) ;
+
+body {
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    background-color: lightseagreen;
 }
-.calculator-body:hover{
-    transform: scale(1.1);
-    /* text-shadow: 2px 2px 2px rgba(206,89,55,0) 0 0 10px rgba(255,255,255,.5) 0 0 15px rgba(255,255,255,.5); */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: all 1s ease-in-out;
-}
-.calculator-heading{
-    font-size: 2.125rem;
-    margin-bottom: 20px;
-}
-.birthdate{
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-#calculator-input{
+
+#container {
+    height: 45%;
+    width: 35%;
     padding: 10px;
-    border-radius: 5px ;
-    outline: none;
-    border: 1px solid #ccc;
-    font-style: italic;
-    max-width: 300px;
-    width: 100%;
+    margin-bottom: 30px;
 }
-#calculator-input:focus{
-    outline: 2px solid red;
-}
-.calculator-btn{
-    outline: 0;
-    padding-block: 10px;
-    padding-inline: 20px;
-    text-shadow: 2px 2px 2px rgba(206,89,55,0) 0 0 10px rgba(255,255,255,.5) 0 0 15px rgba(255,255,255,.5);
+
+#age-in {
+    background-color: black;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: none;
-    /* font-weight: bold; */
-    margin-bottom: 1.75rem;
+    height: 6rem;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 50px;
 }
-.calculator-btn:hover{
-    transform: scale(1.1);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: all 1s ease-in-out;
+
+#date {
+    height: 60px;
+    border-radius: 10px;
+    width: 60%;
+    padding: 0px 20px;
+    border: 2px black solid;
+    margin-right: 20px;
+    font-size: larger;
+    font-weight: 800;
 }
-#calculator-result{
-    font-weight: bold;
-    font-size: 1.75rem;
-    margin-bottom: 20px;
+
+#button {
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 30%;
+    border: 2px black solid;
+    background-color: white;
+    font-size: larger;
+}
+
+.age-out {
+    background-color: black;
+    border-radius: 10px;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+#output-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    font-size: xxx-large;
+}
+
+.age-out>p {
+    color: rgba(128, 128, 128, 0.968);
 }
